@@ -22,9 +22,12 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,md}": [
-      "prettier --write",
-      "eslint --fix"
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
     ]
   },
   "keywords": [],
